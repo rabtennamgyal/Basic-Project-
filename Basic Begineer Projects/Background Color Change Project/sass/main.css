@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+  color: #ff651efd;
+}
+
+.header {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(12, 178, 243, 0.801)), to(rgba(1, 162, 255, 0.788)));
+  background: linear-gradient(to right, rgba(12, 178, 243, 0.801), rgba(1, 162, 255, 0.788));
+}
+
+.header .btn .change-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  border-radius: 100px;
+}
+
+.header .btn .change-btn:hover {
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.801);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  color: #fff;
+}
+/*# sourceMappingURL=main.css.map */

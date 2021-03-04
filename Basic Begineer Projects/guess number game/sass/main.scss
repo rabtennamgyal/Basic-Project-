@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background: linear-gradient(to right, #06ff06, #05b105);
+    height: 100vh;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 2%;
+
+        .btn {
+            height: 50px;
+            width: 150px;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+
+        h1 {
+            cursor: pointer;
+            font-size: 20px;
+            font-family: monospace, cursive, sans-serif;
+        }
+    }
+
+    .main-one {
+        display: flex;
+        justify-content: center;
+
+        .title {
+            cursor: pointer;
+            font-size: 50px;
+            font-family: monospace, sans-serif;
+            margin-bottom: 10px;
+        }
+    }
+
+    .main-two {
+        display: grid;
+        justify-content: center;
+
+        .number {
+            display: grid;
+            place-items: center;
+            padding: 1px;
+            font-size: 100px;
+            border: solid #fff;
+            width: 130px;
+            height: 130px;
+        }
+    }
+
+    //.x {
+        //background: linear-gradient(to right, #49b449, #19ff53);
+        //height: 34vh;
+        //display: grid;
+        //align-items: center;
+        //grid-template-columns: repeat(2, 1fr);
+        //margin-top: 100px;
+
+        .main-three {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 40vw;
+            align-items: center;
+            margin-top: 30px;
+            //justify-content: center;
+
+            .input-area {
+                display: grid;
+                place-items: center;
+                margin-left: 60px;
+                padding: 2%;
+                background-color: #fff;
+                border: solid #000;
+
+                .input {
+                    margin-bottom: 10px;
+                    height: 50px;
+                    width: 100px;
+                }
+
+                .check {
+                    cursor: pointer;
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 5px;
+                }
+            }
+
+            .score-area {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+
+                .a, .b, .c {
+                    display: grid;
+                    place-items: center;
+                    padding: 2%;
+                    background-color:#fff;
+                    width: 15vw;
+                    height: 10vh;
+                    margin-right: 20px;
+                    border: solid #000;
+                }
+                .a-text, .b-text, .c-text {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+//}

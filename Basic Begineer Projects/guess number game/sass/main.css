@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, right top, from(#06ff06), to(#05b105));
+  background: linear-gradient(to right, #06ff06, #05b105);
+  height: 100vh;
+}
+
+.header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2%;
+}
+
+.header .navbar .btn {
+  height: 50px;
+  width: 150px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.header .navbar h1 {
+  cursor: pointer;
+  font-size: 20px;
+  font-family: monospace, cursive, sans-serif;
+}
+
+.header .main-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .main-one .title {
+  cursor: pointer;
+  font-size: 50px;
+  font-family: monospace, sans-serif;
+  margin-bottom: 10px;
+}
+
+.header .main-two {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .main-two .number {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 1px;
+  font-size: 100px;
+  border: solid #fff;
+  width: 130px;
+  height: 130px;
+}
+
+.header .main-three {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+}
+
+.header .main-three .input-area {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-left: 60px;
+  padding: 2%;
+  background-color: #fff;
+  border: solid #000;
+}
+
+.header .main-three .input-area .input {
+  margin-bottom: 10px;
+  height: 50px;
+  width: 100px;
+}
+
+.header .main-three .input-area .check {
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+}
+
+.header .main-three .score-area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.header .main-three .score-area .a, .header .main-three .score-area .b, .header .main-three .score-area .c {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 2%;
+  background-color: #fff;
+  width: 15vw;
+  height: 10vh;
+  margin-right: 20px;
+  border: solid #000;
+}
+
+.header .main-three .score-area .a-text, .header .main-three .score-area .b-text, .header .main-three .score-area .c-text {
+  font-size: 20px;
+}
+/*# sourceMappingURL=main.css.map */

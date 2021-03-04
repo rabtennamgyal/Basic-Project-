@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  height: auto;
+  background: -webkit-gradient(linear, left top, right top, from(#ff9a02cc), to(#ffbd06cc));
+  background: linear-gradient(to right, #ff9a02cc, #ffbd06cc);
+}
+
+.header .navbar {
+  height: 20vh;
+  background: -webkit-gradient(linear, left top, right top, from(#01ccff), to(#00fff2));
+  background: linear-gradient(to right, #01ccff, #00fff2);
+  border-bottom: solid #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.header .navbar h1 {
+  font-family: cursive, monospace, sans-serif;
+  font-size: 30px;
+}
+
+.header .container .list-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .container .list-container .list-item-one {
+  padding: 2%;
+}
+
+.header .container .list-container .list-item-one .input-field {
+  height: 30px;
+  width: 300px;
+  border: solid #000;
+}
+
+.header .container .list-container .list-item-one .btn {
+  height: 30px;
+  width: 60px;
+  border: solid #000;
+  border-radius: 100px;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.822)));
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.822));
+  color: #000;
+}
+
+.header .container .list-container .list-item-two {
+  display: block;
+  text-align: center;
+  min-height: 100vh;
+  max-height: auto;
+  width: 80vw;
+  background: -webkit-gradient(linear, left top, right top, from(#f88400), to(#ff9408));
+  background: linear-gradient(to right, #f88400, #ff9408);
+  border: solid #fff;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2%;
+  padding: 20px 10px 20px 10px;
+  font-family: monospace, cursive, sans-serif;
+  background: -webkit-gradient(linear, left top, right top, from(#ff9a02cc), to(#ffbd06cc));
+  background: linear-gradient(to right, #ff9a02cc, #ffbd06cc);
+  border: solid #fff;
+  list-style: none;
+}
+
+.todo .check-btn {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(#0bff02), to(#12da00));
+  background: linear-gradient(to right, #0bff02, #12da00);
+  padding: 2%;
+  color: #fff;
+  width: 10%;
+}
+
+.todo .check-btn:hover {
+  color: #26ff09;
+  background: -webkit-gradient(linear, left top, right top, from(#f8e0e0), to(#ffffff));
+  background: linear-gradient(to right, #f8e0e0, #ffffff);
+}
+
+.todo .list-style {
+  cursor: pointer;
+  font-size: 27px;
+  color: #fff;
+}
+
+.todo .trash-btn {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(#ff0c0c), to(#d63403));
+  background: linear-gradient(to right, #ff0c0c, #d63403);
+  padding: 2%;
+  color: #fff;
+  width: 10%;
+}
+
+.todo .trash-btn:hover {
+  color: #ff0000;
+  background: -webkit-gradient(linear, left top, right top, from(#f8e0e0), to(#ffffff));
+  background: linear-gradient(to right, #f8e0e0, #ffffff);
+}
+/*# sourceMappingURL=main.css.map */

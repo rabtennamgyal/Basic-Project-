@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 16px;
+    color: #ff651efd;
+}
+
+
+
+.header {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to right, rgba(12, 178, 243, 0.801), rgba(1, 162, 255, 0.788));
+
+    .btn {
+
+    .change-btn {
+        cursor: pointer;
+        height: 50px;
+        width: 150px;
+        border-radius: 100px;
+
+        &:hover {
+            height: 55px;
+            background-color: rgba(0, 0, 0, 0.801);
+            transition: 0.5s ease-in-out;
+            color: #fff;
+        }
+
+        }
+    }
+}

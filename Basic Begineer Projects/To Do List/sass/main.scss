@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: auto;
+    background: linear-gradient(to right, #ff9a02cc, #ffbd06cc);
+
+    .navbar {
+        height: 20vh;
+        background: linear-gradient(to right, #01ccff, #00fff2);
+        border-bottom: solid #fff;
+        display: grid;
+        place-items: center;
+
+        h1 {
+            font-family: cursive, monospace, sans-serif;
+            font-size: 30px;
+        }
+    }
+
+    .container {
+
+        .list-container {
+            display: grid;
+            place-items: center;
+            justify-content: center;
+    
+            .list-item-one {
+                padding: 2%;
+                .input-field {
+                    height: 30px;
+                    width: 300px;
+                    border: solid #000;
+                }
+    
+                .btn {
+                    height: 30px;
+                    width: 60px;
+                    border: solid #000;
+                    border-radius: 100px;
+                    cursor: pointer;
+                    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.822));
+                    color: #000;
+                }
+            }
+    
+            .list-item-two {
+                display: block;
+                text-align: center;
+                min-height: 100vh;
+                max-height: auto;
+                width: 80vw;
+                background: linear-gradient(to right, #f88400, #ff9408);
+                border: solid #fff;
+                padding: 2%;
+                margin-bottom: 2%;
+            }
+        }
+    }
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2%;
+    padding: 20px 10px 20px 10px;
+    font-family: monospace, cursive, sans-serif;
+    background: linear-gradient(to right, #ff9a02cc, #ffbd06cc);
+    border: solid #fff;
+    list-style: none;
+
+    
+    .check-btn {
+        cursor: pointer;
+        background: linear-gradient(to right, #0bff02, #12da00);
+        padding: 2%;
+        color: #fff;
+        width: 10%;
+    
+        &:hover {
+            color: #26ff09;
+            background: linear-gradient(to right, #f8e0e0, #ffffff);
+        }
+    }
+
+    .list-style {
+        cursor: pointer;
+        font-size: 27px;
+        color: #fff;
+    }
+
+    .trash-btn {
+        cursor: pointer;
+        background: linear-gradient(to right, #ff0c0c, #d63403);
+        padding: 2%;
+        color: #fff;
+        width: 10%;
+    
+        &:hover {
+            color: #ff0000;
+            background: linear-gradient(to right, #f8e0e0, #ffffff);
+        }
+    }
+}
+
+

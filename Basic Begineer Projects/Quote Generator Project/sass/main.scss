@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+}
+
+.top {
+    display: grid;
+    place-items: center;
+    border-bottom: solid #000;
+    height: 15vh;
+    background: linear-gradient(to right, rgba(0, 195, 243, 0.808), rgba(2, 86, 241, 0.801));
+
+    h1 {
+        font-size: 30px;
+        font-family: cursive, monospace, sans-serif;
+        color: #fff;
+    }
+
+}
+
+.section-one {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    height: 85vh;
+    background: linear-gradient(to right, rgb(7, 214, 180), rgba(4, 200, 214, 0.74));
+
+    .quote-container {
+        margin-top: 2%;
+        display: grid;
+        place-items: center;
+        height: 70vh;
+        width: 90vw;
+        background: linear-gradient(to right, rgba(19, 220, 255, 0.87), rgb(7, 176, 255));
+        border: solid #000;
+
+        .para {
+            font-size: 30px;
+            font-family: Akaya Kanadaka, cursive, monospace, sans-serif;
+            padding: 2%;
+        }
+    }
+
+    .btn {
+        display: grid;
+        place-items: center;
+        height: 10vh;
+        width: 10vw;
+        margin-bottom: 30px;
+
+        #btn {
+            height: 50px;
+            width: 100px;
+            border-radius: 100px;
+            cursor: pointer;
+        }
+    }
+
+}
