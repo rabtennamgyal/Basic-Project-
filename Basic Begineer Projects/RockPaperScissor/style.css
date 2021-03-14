@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFCCCC;
+}
+
+h1 {
+    display: grid;
+    justify-content: center;
+    font-family: cursive, monospace, sans-serif;
+    font-size: 40px;
+    color: #000000;
+    position: relative;
+    top: 30px;
+}
+
+.score {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    grid-gap: 100px;
+    position: relative;
+    top: 80px;
+}
+
+#player, #computer {
+    font-size: 15px;
+    font-family: monospace;
+}
+
+p {
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.button {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 120px;
+}
+
+button {
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: aqua;
+    border-radius: 5%;
+}
+
+button:hover {
+    background-color: aquamarine;
+}
+
+#rock, #paper, #scissor {
+    height: 60px;
+}
+
+.choices {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    position: relative;
+    top: 220px;
+    grid-gap: 250px;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: #cfff;
+    text-align: center;
+    margin: 10% auto;
+    width: 350px;
+    border-radius: 10px;
+    padding: 3rem;
+}
