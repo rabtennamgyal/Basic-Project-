@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  background: -webkit-gradient(linear, left top, right top, from(#12c8ff), to(#19dcff));
+  background: linear-gradient(to right, #12c8ff, #19dcff);
+  min-height: 100vh;
+  max-height: auto;
+}
+
+.main .navbar {
+  display: -ms-grid;
+  display: grid;
+  background: -webkit-gradient(linear, left top, right top, from(#09a1e7), to(#0ee3eb));
+  background: linear-gradient(to right, #09a1e7, #0ee3eb);
+  height: 15vh;
+}
+
+.main .navbar .title {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main .navbar .title h1 {
+  font-family: Redressed, 'Courier New', Courier, monospace;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.main .quotes {
+  padding: 1rem;
+  border: solid #fff;
+  height: 10vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: cursive;
+  font-size: 0.9rem;
+}
+
+.main .addBook__btn {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin: 1rem;
+}
+
+.main .addBook__btn .add {
+  cursor: pointer;
+  min-height: 4rem;
+  max-height: auto;
+  min-width: 7rem;
+  max-width: auto;
+  padding: 1rem;
+  background: -webkit-gradient(linear, left top, right top, from(#1cf31c), to(#2aff2a));
+  background: linear-gradient(to right, #1cf31c, #2aff2a);
+  color: #fff;
+  font-family: Redressed, monospace;
+  font-size: 2rem;
+}
+
+.main .addBook__btn .add:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#ffffff));
+  background: linear-gradient(to right, #ffffff, #ffffff);
+  color: #2aff2a;
+}
+
+.main .books {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  place-items: center;
+}
+
+.main .books .book__card {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  border: solid #fff;
+  height: 20rem;
+  width: 15rem;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.main .books .book__card .infoDiv {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 230px;
+  width: 100%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.main .books .book__card .infoStyle {
+  font-size: 1.5rem;
+  font-family: Redressed, 'Courier New', Courier, monospace;
+}
+
+.main .books .book__card .flexDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30%;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+}
+
+.main .books .book__card .read {
+  cursor: pointer;
+  height: 2rem;
+  width: 4rem;
+  border: solid #fff;
+  border-radius: 20px;
+  outline: none;
+}
+
+.main .books .book__card .read:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#20ff20), to(#20ff20));
+  background: linear-gradient(to right, #20ff20, #20ff20);
+}
+
+.main .books .book__card .delete {
+  cursor: pointer;
+  height: 2rem;
+  width: 4rem;
+  border: solid #fff;
+  border-radius: 20px;
+  outline: none;
+}
+
+.main .books .book__card .delete:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ff1313), to(#ff1e1e));
+  background: linear-gradient(to right, #ff1313, #ff1e1e);
+}
+
+.main .modal {
+  display: none;
+  place-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.445);
+  top: 0;
+  left: 0;
+}
+
+.main .modal .modal-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  padding: 1rem;
+  place-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#09e2ff), to(#0bfff3));
+  background: linear-gradient(to right, #09e2ff, #0bfff3);
+  height: 70%;
+  width: 30%;
+  border-radius: 20px;
+  border: solid #000;
+}
+
+.main .modal .modal-content .cancel {
+  cursor: pointer;
+  position: relative;
+  top: -20px;
+  left: 170px;
+  padding: 5px;
+}
+
+.main .modal .modal-content input {
+  font-size: 1.2rem;
+  height: 3rem;
+  width: 20rem;
+}
+
+.main .modal .modal-content .submit {
+  cursor: pointer;
+  height: 3rem;
+  width: 6rem;
+  background: -webkit-gradient(linear, left top, right top, from(#19f119), to(#21f521));
+  background: linear-gradient(to right, #19f119, #21f521);
+  border-radius: 20px;
+  outline: none;
+}
+
+.main .modal .modal-content .submit:hover {
+  color: #ffffff;
+  font-size: 1rem;
+  -webkit-transition: ease 0.6s;
+  transition: ease 0.6s;
+}
+/*# sourceMappingURL=main.css.map */
