@@ -45,7 +45,6 @@ const quoteDiv = document.querySelector('.quotes');
 const add = document.querySelector('.add');
 const modal = document.querySelector('.modal');
 const cancel = document.querySelector('.cancel');
-
 const author = document.querySelector('.author');
 const title = document.querySelector('.book__title');
 const genres = document.querySelector('.genres');
@@ -53,6 +52,8 @@ const pages = document.querySelector('.pages');
 const modalContent = document.querySelector('.modal-content');
 const bookDiv = document.querySelector('.books');
 const submit = document.querySelector('.submit');
+const dateTime = document.querySelector('.date__time');
+
 
 
 function createBookCard() {
@@ -60,7 +61,6 @@ function createBookCard() {
     bookCard.classList.add('book__card');
     const infoDiv = document.createElement('div');
     infoDiv.classList.add('infoDiv');
-
     const authorInfo = document.createElement('p');
     authorInfo.textContent = author.value;
     authorInfo.classList.add('infoStyle');
@@ -77,8 +77,6 @@ function createBookCard() {
     infoDiv.appendChild(titleInfo);
     infoDiv.appendChild(genresInfo);
     infoDiv.appendChild(pagesInfo);
-
-
     const flexDiv = document.createElement('div');
     flexDiv.classList.add('flexDiv');
     const read = document.createElement('button');
@@ -92,6 +90,7 @@ function createBookCard() {
     bookCard.appendChild(infoDiv);
     bookCard.appendChild(flexDiv);
     bookDiv.appendChild(bookCard);
+
     read.addEventListener('click', function(e) {
         read.textContent = '📗';
         bookCard.style.background = '#1cf31c';
@@ -124,3 +123,8 @@ window.onload = function randomQuote() {
     let random = quotes.sort(() => Math.random() - 0.5);
     quoteDiv.innerHTML = random[0];
 };
+
+// window.onload = function dateAndTime() {
+//     let date = new Date();
+//     dateTime.innerHTML = date;
+// };

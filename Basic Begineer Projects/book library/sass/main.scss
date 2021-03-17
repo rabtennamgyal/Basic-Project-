@@ -28,11 +28,21 @@
                 color: #fff;
             }
         }
+
+        .date__time {
+            position: relative;
+            right: 30px;
+            bottom: 30px;
+            //border: solid #fff;
+            height: 40px;
+            width: 200px;
+            justify-self: end;
+        }
     }
 
     .quotes {
         padding: 1rem;
-        border: solid #fff;
+        //border: solid #fff;
         height: 10vh;
         display: grid;
         place-items: center;
@@ -47,15 +57,17 @@
 
         .add {
             cursor: pointer;
-            min-height: 4rem;
+            min-height: 3rem;
             max-height: auto;
-            min-width: 7rem;
+            min-width: 5rem;
             max-width: auto;
             padding: 1rem;
             background: linear-gradient(to right, #1cf31c, #2aff2a);
             color: #fff;
             font-family: Redressed, monospace;
             font-size: 2rem;
+            border-radius: 20px;
+            outline: none;
 
             &:hover {
                 background: linear-gradient(to right, #ffffff, #ffffff);
@@ -80,6 +92,7 @@
             width: 15rem;
             margin-bottom: 30px;
             border-radius: 20px;
+            background: linear-gradient(to right, #c47854, #ca7732);
 
             .infoDiv {
                 display: grid;
@@ -90,8 +103,15 @@
             }
 
             .infoStyle {
-                font-size: 1.5rem;
+                display: grid;
+                place-items: center;
+                font-size: 1.3rem;
                 font-family: Redressed, 'Courier New', Courier, monospace;
+                border: solid #fff;
+                border-radius: 20px;
+                height: 40px;
+                width: 100%;
+                background: linear-gradient(to right, #fff, #fff);
             }
 
             .flexDiv {

@@ -37,9 +37,18 @@
   color: #fff;
 }
 
+.main .navbar .date__time {
+  position: relative;
+  right: 30px;
+  bottom: 30px;
+  height: 40px;
+  width: 200px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
 .main .quotes {
   padding: 1rem;
-  border: solid #fff;
   height: 10vh;
   display: -ms-grid;
   display: grid;
@@ -57,9 +66,9 @@
 
 .main .addBook__btn .add {
   cursor: pointer;
-  min-height: 4rem;
+  min-height: 3rem;
   max-height: auto;
-  min-width: 7rem;
+  min-width: 5rem;
   max-width: auto;
   padding: 1rem;
   background: -webkit-gradient(linear, left top, right top, from(#1cf31c), to(#2aff2a));
@@ -67,6 +76,8 @@
   color: #fff;
   font-family: Redressed, monospace;
   font-size: 2rem;
+  border-radius: 20px;
+  outline: none;
 }
 
 .main .addBook__btn .add:hover {
@@ -94,6 +105,8 @@
   width: 15rem;
   margin-bottom: 30px;
   border-radius: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#c47854), to(#ca7732));
+  background: linear-gradient(to right, #c47854, #ca7732);
 }
 
 .main .books .book__card .infoDiv {
@@ -107,8 +120,17 @@
 }
 
 .main .books .book__card .infoStyle {
-  font-size: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
   font-family: Redressed, 'Courier New', Courier, monospace;
+  border: solid #fff;
+  border-radius: 20px;
+  height: 40px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
+  background: linear-gradient(to right, #fff, #fff);
 }
 
 .main .books .book__card .flexDiv {
