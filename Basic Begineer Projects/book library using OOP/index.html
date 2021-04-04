@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='sass/main.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class='main'>
+        <!-- Navbar -->
+        <nav class='navbar'>
+            <!-- Just a title div -->
+            <div class='title'>
+                <h1>Library</h1>
+            </div>
+
+            <div class='date__time'>
+                
+            </div>
+        </nav>
+
+        <!-- This div contains random quotes generated from app.js-->
+        <div class='quotes'>
+
+        </div>
+
+        <!-- button to add books -->
+        <div class='addBook__btn'>
+            <button class='add'>
+                New Book
+            </button>
+        </div>
+
+        <div class='books'>
+            
+        </div>
+
+        <div class='modal'>
+            <div class='modal-content'>
+                <div class='cancel'>&times;</div>
+                <input class='author' placeholder=' author'>
+                <input class='book__title' placeholder=' title'>
+                <input class='genres' placeholder=' genres'>
+                <input class='isbn' placeholder=' isbn'>
+                <button class='submit'>Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src='app.js'></script>
+</body>
+</html>
